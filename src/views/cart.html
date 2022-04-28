@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cart</title>
+    <meta charset="utf-8">
+    <meta name='Viewport' content="width=device-width, initial escale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/d0a9f77634.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="cart-h1">Mi compra</h1>
+    <div class="main-container">
+        <section class="cart">
+            <div class="cart-container">
+                <table class="tabla">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th class="remove"></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img class="product-img" src="images/Guitarra1.jpg">
+                                <div class="product-name">
+                                    <p><a class="remove-button" href="">Slash Signature Les Paul</a></p>
+                                    <small>Condición: Nuevo</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="input"><input type="number" value="1"></td>
+                        <td class="price">$2.999</td>
+                        <td>
+                            <a class="remove-button" href=""><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img class="product-img" src="images/Bajo1.jpg">
+                                <div class="product-name">
+                                    <p><a class="remove-button" href="">Flea signature Jazz Bass</a></p>
+                                    <small>Condición: Nuevo</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="input"><input type="number" value="1"></td>
+                        <td class="price">$1.499</td>
+                        <td>
+                            <a class="remove-button" href=""><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="cart-total">
+            <div class="supremo-2">
+                <h2 class="cart-total-h2">Resumen de compra</h2>
+                <div class="cupones">
+                    <label for="cupon">Si tenes un código de descuento ingresalo acá</label>
+                    <input class="input-cupon" type="text" id="cupon" placeholder="Código">
+                    <button class="boton1">Aplicar</button>
+                </div>
+                <div class="tabla-total">
+                    <table>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td>$4.498</td>
+                        </tr>
+                        <tr>
+                            <td>Envio:</td>
+                            <td>Gratis</td>
+                        </tr>
+                        <tr>
+                            <td>Descuento:</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td class="grandota">Total:</td>
+                            <td class="grandota">$4.498</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="boton-pagar">
+                    <button class="boton2">Iniciar pago</button>
+                </div>
+                <div class="container-mastercard">
+                    <img class="mastercard" src="images/mastercard.png">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

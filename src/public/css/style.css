@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+
+
+/*-----Main-----*/
+
+/*------- Carrito -------*/
+
+
+
+
+.main-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #666;
+    font-family: nunito;
+    width: 70% auto;
+    margin: 0 auto;
+}
+
+.cart-h1 {
+    color: black;
+    margin: 0 auto;
+    font-family: nunito;
+    width: 64%;
+}
+
+.cart {
+    border: solid #666 1.5px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 10px;
+}
+
+.tabla {
+    align-items: center;
+    width: 100%;
+}
+
+.product-info {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.product-name {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.price {
+    font-weight: bold;
+    color: black;
+}
+
+th {
+    text-align: left;
+    padding: 6px;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+
+td {
+    padding-top: 10px;
+}
+
+.remove-button {
+    color: #666;
+    text-decoration: none;
+}
+
+
+.input {
+    text-align: left;
+    padding-left: 13px;
+}
+
+td input {
+    width: 30px;
+    height: 20px;
+}
+
+.product-img {
+    height: 200px;
+    width: auto;
+}
+
+
+
+/*---------- Cart-Total y  Cupon -----------*/
+
+
+
+.cart-total {
+    display: flex;
+    border: solid #666 1px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: auto;
+}
+
+.supremo-2 {
+    display: flex;
+    flex-direction: column;
+    font-family: nunito;
+    color: #666;
+    padding: 15px;
+    width: auto;
+}
+
+.cart-total-h2 {
+    margin: 0;
+    color: black;
+}
+
+.cupones {
+    height: 67px;
+}
+
+.input-cupon {
+    display: flex;
+    width: 80px;
+    height: 28px;
+}
+
+.boton1 {
+    position: relative;
+    left: 90px;
+    bottom: 29px;
+    padding: 0;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: medium;
+    background-color: black;
+    color: white;
+}
+
+.boton1:hover {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.tabla-total {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+.grandota {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.boton-pagar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.boton2 {
+    border-radius: 25px;
+    border: none;
+    font-family: nunito;
+    font-size: x-large;
+    font-weight: bold;
+    width: 245px;
+    height: 50px;
+}
+
+.boton2:hover {
+    background-color: rgb(161, 209, 248);
+    transition-property: all;
+    transition-duration: 0.9s;
+}
+
+.container-mastercard {
+    width: 100%;
+    text-align: center;
+}
+
+
+.mastercard {
+    width: 270px;
+    height: auto;
+    padding-top: 10px;
+}
+
+
+
+
+/*---------- MEDIA -----------*/
+/*---------- Cart media -----------*/
+
+
+
+
+@media (max-width: 1045px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .cart {
+        border: solid #666 1.5px;
+        border-radius: 5px;
+        width: 100%;
+        
+    }
+
+    .product-img {
+        height: 150px;
+    }
+
+
+
+    /*------Subtotal y cupones--------*/
+
+
+
+    .cart-total {
+        display: flex;
+        margin-left: 0;
+        margin-top: 5px;
+        margin-bottom: auto;
+        width: 100%;
+        
+    }
+
+    .supremo-2 {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .tabla-total td {
+        padding: 10px;
+    }
+}
